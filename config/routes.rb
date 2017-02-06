@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   root   'static_pages#home'
-  get    '/help',    to: 'static_pages#help'
-  get    '/about',   to: 'static_pages#about'
+  get    '/sup',   to: 'static_pages#sup'
   get    '/contact', to: 'static_pages#contact'
+  get    '/pres',   to: 'static_pages#pres'
+  get    '/pub',   to: 'static_pages#pub'  
   get    '/signup',  to: 'users#new'
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
